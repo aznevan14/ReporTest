@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnIncremento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="+"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/btnDecremento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnIncremento"
+        android:layout_editor_absoluteY="217dp"
+        android:layout_marginEnd="76dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btnIncremento"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serie Fibonacci"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="122dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
